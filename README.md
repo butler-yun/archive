@@ -1,7 +1,8 @@
 ## make a archive web page
 
--   [ ] HTML
+-   [x] HTML
 -   [ ] CSS (SCSS)
 -   js
     -   [ ] lazy load img
     -   [ ] search box
+-   etc
