@@ -8,41 +8,34 @@
         <meta name="description" content="Archive website created with HTML5, CSS3 and JavaScript" />
         <title>Archive :: Lorem ipsum dolor sit!</title>
         <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon/favicon_32.png" />
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/d292710aa7.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="src/css/style.min.css" />
     </head>
     <body>
         <!-- Start:: header -->
         <header id="header">
             <button type="button" class="btn btn-trigger" aria-expanded="false" aria-controls="nav" aria-label="Open">
                 <i class="fa-solid fa-bars"></i>
-                <span class="name">categories</span>
+                <span class="name">Categories</span>
             </button>
 
             <a href="index.html" class="header__link">
-                <img src="src/images/logo.png" alt="logo" />
-                <h1>Archive</h1>
+                <img src="src/images/logo.png" alt="logo" class="logo" />
+                <h1 class="ally-hidden">Archive</h1>
             </a>
 
-            <ul>
-                <li>
-                    <button type="button" class="btn btn-search" aria-expanded="false" aria-controls="search-box" aria-label="Open">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="btn btn-mode" aria-pressed="false" aria-label="mode change">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                </li>
-                <li>
-                    <button type="button" class="btn btn-signup" data-target="#signup">Legister / Login</button>
-                </li>
-            </ul>
+            <div class="btns">
+                <button type="button" class="btn btn-search" aria-expanded="false" aria-controls="search-box" aria-label="Open">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+                <button type="button" class="btn btn-signup" data-target="#signup">Legister / Login</button>
+            </div>
 
             <form action="./" method="get" id="search-box">
                 <input type="text" id="search" placeholder="Please enter your search term." aria-label="Search" />
-                <button type="button" class="btn-close" aria-controls="search-box">
+
+                <button type="button" class="btn btn-close" aria-controls="search-box">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </form>
@@ -52,7 +45,7 @@
         <!-- Start:: nav -->
         <nav id="nav">
             <div class="header">
-                <img src="src/images/logo.png" alt="logo" class="nav__logo" />
+                <img src="src/images/logo.png" alt="logo" class="logo" />
                 <button type="button" class="btn btn-close" aria-controls="nav" aria-label="Close">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
@@ -69,67 +62,70 @@
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
-                        Bravo
+                    <a href="#none" class="nav__link">
+                        <div>
+                            Bravo
+                            <span class="badge badge-green">New</span>
+                        </div>
                         <span class="badge">43</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Charlie
                         <span class="badge">24</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Delta
                         <span class="badge">27</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Echo
                         <span class="badge">78</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Foxtrot
                         <span class="badge">28</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Golf
                         <span class="badge">98</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Hotel
                         <span class="badge">44</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         India
                         <span class="badge">35</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Juliett
                         <span class="badge">29</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Kilo
                         <span class="badge">26</span>
                     </a>
                 </li>
                 <li class="nav__item">
-                    <a href="none" class="nav__link">
+                    <a href="#none" class="nav__link">
                         Lima
                         <span class="badge">56</span>
                     </a>
@@ -143,33 +139,67 @@
             <section class="works">
                 <h2 class="title">Showing Arcives</h2>
 
-                <article class="work">
-                    <figure>
-                        <a href="#none" class="work__link">
-                            <img src="src/images/works/photo_1.jpg" alt="work photo" class="work__img" />
-                        </a>
-                    </figure>
-                    <div class="work__info">
-                        <div>
-                            <h2>Vienna</h2>
-                            <span class="date">Feb 17, 2022</span>
-                        </div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum quia totam, voluptas eius dolorem assumenda sint earum laudantium perferendis?</p>
-                    </div>
-                    <div class="author">
-                        <div class="author__profile">
-                            <a href="#none">
-                                <img src="src/images/works/profile/avatar_1.png" alt="avatar" />
+                <div class="section__container">
+                    <article class="work">
+                        <figure>
+                            <a href="#none" class="work__link">
+                                <img src="src/images/works/photo_1.jpg" alt="work photo" class="work__img" />
                             </a>
-                            Aaron
+
+                            <button type="button" class="btn btn-more" aria-expanded="false">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </button>
+
+                            <div class="hover">
+                                <ul class="hover__icon">
+                                    <li>
+                                        <a href="#none" target="_blank">
+                                            <i class="fa-brands fa-github"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" target="_blank">
+                                            <i class="fa-brands fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" target="_blank">
+                                            <i class="fa-brands fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#none" target="_blank">
+                                            <i class="fa-solid fa-share-from-square"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </figure>
+
+                        <div class="work__info">
+                            <div>
+                                <h3>Flowers</h3>
+                                <span class="date">Feb 17, 2022</span>
+                            </div>
+
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore illum quia totam, voluptas eius dolorem assumenda sint earum laudantium perferendis?</p>
+
+                            <div class="author">
+                                <div class="author__profile">
+                                    <a href="#none">
+                                        <img src="src/images/works/profile/avatar_1.png" alt="avatar" class="author__link" />
+                                    </a>
+                                    <span class="name">Aaron</span>
+                                </div>
+                                <div class="author__stack">
+                                    <span class="badge badge-yellow">JS</span>
+                                    <span class="badge badge-blue">PHP</span>
+                                    <span class="badge badge-red">Ruby</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="author__stack">
-                            <span class="badge author__stack-blue">JS</span>
-                            <span class="badge author__stack-yellow">PHP</span>
-                            <span class="badge author__stack-green">Ruby</span>
-                        </div>
-                    </div>
-                </article>
+                    </article>
+                </div>
             </section>
         </main>
         <!-- End:: Contents -->
@@ -177,23 +207,6 @@
         <!-- Start:: footer -->
         <footer id="footer">
             <p>Copyright &copy; 2022 Archive, All Rights Reserved.</p>
-            <ul class="social">
-                <li>
-                    <a href="#none" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#none" target="_blank">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#none" target="_blank">
-                        <i class="fa-brands fa-twitter-square"></i>
-                    </a>
-                </li>
-            </ul>
         </footer>
         <!-- End:: footer -->
     </body>

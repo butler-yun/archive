@@ -1,0 +1,37 @@
+.badge {
+    min-width: 25px;
+    min-height: 25px;
+    padding: 0 $space-5;
+    margin-left: $space-5;
+    line-height: 25px;
+    font-size: $font-xs;
+    text-align: center;
+    color: $sea;
+    background-color: $light-blue;
+    display: inline-block;
+    -webkit-border-radius: $border-r-6;
+    -moz-border-radius: $border-r-6;
+    -ms-border-radius: $border-r-6;
+    -o-border-radius: $border-r-6;
+    border-radius: $border-r-6;
+}
+
+.badge-blue {
+    color: $white;
+    background-color: $blue;
+}
+
+.badge-green {
+    color: $white;
+    background-color: $green;
+}
+
+.badge-red {
+    color: $white;
+    background-color: $red;
+}
+
+.badge-yellow {
+    color: $white;
+    background-color: $yellow;
+}

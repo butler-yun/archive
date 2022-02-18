@@ -1,0 +1,34 @@
+@import "../mixins/mixin";
+
+.btn {
+    min-width: 34px;
+    height: 34px;
+    font-size: $font-xs;
+    font-weight: $font-weight-bold;
+    color: $black;
+    -webkit-transition: color $animation-duration ease;
+    -moz-transition: color $animation-duration ease;
+    -ms-transition: color $animation-duration ease;
+    -o-transition: color $animation-duration ease;
+    transition: color $animation-duration ease;
+
+    &:hover {
+        @include tablet {
+            color: $light-gray-400;
+        }
+    }
+}
+
+.btn-close {
+    font-size: $font-lg;
+}
+
+.btn-more {
+    color: $white;
+    font-size: $font-lg;
+    -webkit-border-radius: $border-r-pill;
+    -moz-border-radius: $border-r-pill;
+    -ms-border-radius: $border-r-pill;
+    -o-border-radius: $border-r-pill;
+    border-radius: $border-r-pill;
+}
