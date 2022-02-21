@@ -29,115 +29,116 @@
                 <button type="button" class="btn btn-search" aria-expanded="false" aria-controls="search-box" aria-label="Open">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button type="button" class="btn btn-signup" data-target="#signup">Legister / Login</button>
+                <button type="button" class="btn btn-signup" aria-haspopup="true" data-target="#signup">Legister / Login</button>
             </div>
 
             <form action="./" method="get" id="search-box">
-                <input type="text" id="search" placeholder="Please enter your search term." aria-label="Search" />
+                <input type="text" id="search" placeholder="Please enter your search term." aria-label="Search" name="term" />
 
                 <button type="button" class="btn btn-close" aria-controls="search-box">
                     <i class="fa-solid fa-xmark"></i>
                 </button>
             </form>
+
+            <!-- Start:: nav -->
+            <nav id="nav">
+                <div class="header">
+                    <img src="src/images/logo.png" alt="logo" class="logo" />
+                    <button type="button" class="btn btn-close" aria-controls="nav" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <ul class="nav__lists">
+                    <li class="nav__item">
+                        <button type="button" class="btn btn-signup" data-target="#signup">Legister / Login</button>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Alfa
+                            <span class="badge">56</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            <div>
+                                Bravo
+                                <span class="badge badge-green">New</span>
+                            </div>
+                            <span class="badge">43</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Charlie
+                            <span class="badge">24</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Delta
+                            <span class="badge">27</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Echo
+                            <span class="badge">78</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Foxtrot
+                            <span class="badge">28</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Golf
+                            <span class="badge">98</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Hotel
+                            <span class="badge">44</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            India
+                            <span class="badge">35</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Juliett
+                            <span class="badge">29</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Kilo
+                            <span class="badge">26</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#none" class="nav__link">
+                            Lima
+                            <span class="badge">56</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- End:: nav -->
         </header>
         <!-- End:: header -->
-
-        <!-- Start:: nav -->
-        <nav id="nav">
-            <div class="header">
-                <img src="src/images/logo.png" alt="logo" class="logo" />
-                <button type="button" class="btn btn-close" aria-controls="nav" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
-            </div>
-
-            <ul class="nav__lists">
-                <li class="nav__item">
-                    <button type="button" class="btn btn-signup" data-target="#signup">Legister / Login</button>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Alfa
-                        <span class="badge">56</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        <div>
-                            Bravo
-                            <span class="badge badge-green">New</span>
-                        </div>
-                        <span class="badge">43</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Charlie
-                        <span class="badge">24</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Delta
-                        <span class="badge">27</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Echo
-                        <span class="badge">78</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Foxtrot
-                        <span class="badge">28</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Golf
-                        <span class="badge">98</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Hotel
-                        <span class="badge">44</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        India
-                        <span class="badge">35</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Juliett
-                        <span class="badge">29</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Kilo
-                        <span class="badge">26</span>
-                    </a>
-                </li>
-                <li class="nav__item">
-                    <a href="#none" class="nav__link">
-                        Lima
-                        <span class="badge">56</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <!-- End:: nav -->
 
         <!-- Start:: Contents -->
         <main id="contents">
             <section class="works">
                 <h2 class="title">Showing Arcives</h2>
+                <p class="search-result"></p>
 
                 <div class="section__container">
                     <article class="work">
@@ -183,7 +184,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Flowers</h3>
+                                <h3 class="title">Flowers</h3>
                                 <span class="date">Feb 17, 2022</span>
                             </div>
 
@@ -248,7 +249,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>I Love You</h3>
+                                <h3 class="title">I Love You</h3>
                                 <span class="date">Feb 15, 2022</span>
                             </div>
 
@@ -312,7 +313,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Blah blah</h3>
+                                <h3 class="title">Blah blah</h3>
                                 <span class="date">Feb 17, 2022</span>
                             </div>
 
@@ -380,7 +381,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>fallen leaves</h3>
+                                <h3 class="title">fallen leaves</h3>
                                 <span class="date">Feb 21, 2022</span>
                             </div>
 
@@ -445,7 +446,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>tree</h3>
+                                <h3 class="title">tree</h3>
                                 <span class="date">Feb 11, 2022</span>
                             </div>
 
@@ -512,7 +513,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>car</h3>
+                                <h3 class="title">car</h3>
                                 <span class="date">Feb 19, 2022</span>
                             </div>
 
@@ -577,7 +578,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Happy</h3>
+                                <h3 class="title">Happy</h3>
                                 <span class="date">Feb 19, 2022</span>
                             </div>
 
@@ -644,7 +645,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Flowers2</h3>
+                                <h3 class="title">Flowers2</h3>
                                 <span class="date">Feb 21, 2022</span>
                             </div>
 
@@ -708,7 +709,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>HAHAHA</h3>
+                                <h3 class="title">HAHAHA</h3>
                                 <span class="date">Feb 15, 2022</span>
                             </div>
 
@@ -772,7 +773,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Flowers</h3>
+                                <h3 class="title">Flowers</h3>
                                 <span class="date">Feb 17, 2022</span>
                             </div>
 
@@ -802,7 +803,6 @@
                                     data-src="https://ik.imagekit.io/joo/photo_11.jpg?tr=w-320,h-480"
                                     alt="work photo"
                                     class="work__img lazy"
-                                    data-src=""
                                 />
                             </a>
 
@@ -838,7 +838,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Cake</h3>
+                                <h3 class="title">Cake</h3>
                                 <span class="date">Feb 17, 2022</span>
                             </div>
 
@@ -903,7 +903,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Space</h3>
+                                <h3 class="title">Space</h3>
                                 <span class="date">Feb 17, 2022</span>
                             </div>
 
@@ -968,7 +968,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Dance</h3>
+                                <h3 class="title">Dance</h3>
                                 <span class="date">Feb 15, 2022</span>
                             </div>
 
@@ -1032,7 +1032,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Couple</h3>
+                                <h3 class="title">Couple</h3>
                                 <span class="date">Feb 17, 2022</span>
                             </div>
 
@@ -1100,7 +1100,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Lotus</h3>
+                                <h3 class="title">Lotus</h3>
                                 <span class="date">Feb 21, 2022</span>
                             </div>
 
@@ -1165,7 +1165,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>tree</h3>
+                                <h3 class="title">tree</h3>
                                 <span class="date">Feb 11, 2022</span>
                             </div>
 
@@ -1232,7 +1232,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Peace</h3>
+                                <h3 class="title">Peace</h3>
                                 <span class="date">Feb 19, 2022</span>
                             </div>
 
@@ -1297,7 +1297,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Hunting</h3>
+                                <h3 class="title">Hunting</h3>
                                 <span class="date">Feb 19, 2022</span>
                             </div>
 
@@ -1364,7 +1364,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Couple2</h3>
+                                <h3 class="title">Couple2</h3>
                                 <span class="date">Feb 21, 2022</span>
                             </div>
 
@@ -1428,7 +1428,7 @@
 
                         <div class="work__info">
                             <div>
-                                <h3>Winter</h3>
+                                <h3 class="title">Winter</h3>
                                 <span class="date">Feb 15, 2022</span>
                             </div>
 

@@ -2,11 +2,11 @@ form {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    padding: $space-12 $space-10;
 }
 
 input[type="text"] {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: $space-14 $space-12;
 }
