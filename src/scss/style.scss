@@ -41,10 +41,8 @@ body {
 }
 
 .section__container {
-    display: flex;
-    justify-content: stretch;
-    align-items: stretch;
-    flex-wrap: wrap;
+    column-width: 300px;
+    column-gap: $space-16;
 }
 
 .ally-hidden {
